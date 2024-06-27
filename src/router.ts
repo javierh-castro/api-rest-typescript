@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { createProduct } from "./handlers/product";
 
 const router = Router()//De esta manera llamamos todas las funciones de router
 
@@ -6,9 +7,7 @@ router.get("/", (req, res) => {
   res.json("Desde Get");
 });
 
-router.post("/", (reg, res) => {
-  res.json("Desde POST");
-});
+router.post("/", createProduct)
 
 router.put("/", (reg, res) => {
   res.json("Desde PUT");
