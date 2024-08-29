@@ -23,4 +23,8 @@ server.use(express.json())
 
 server.use("/api/products", router); //aca podemos modificar el nombre del url todos a la vez
 
+server.get('/api', (req, res) => {
+  res.json({msg: 'Desde API'})
+})
+
 export default server;
