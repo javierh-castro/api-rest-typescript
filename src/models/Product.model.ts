@@ -11,7 +11,7 @@ class Product extends Model {
     declare name: string
 
     @Column({
-        type: DataType.FLOAT(6, 2)
+        type: DataType.FLOAT// Esto estaban => (6, 2)
     })
     declare price: number
     @Default(true)//Esto se coloca antes de la columna

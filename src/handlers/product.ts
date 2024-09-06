@@ -23,7 +23,7 @@ export const getProductById = async (req: Request, res: Response) => {
     const product = await Product.findByPk(id);
     if (!product) {
       return res.status(404).json({
-        error: "Product not found",
+        error: "Producto No Encontrado",
       });
     }
 
