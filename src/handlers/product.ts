@@ -1,12 +1,12 @@
 import { Response, Request } from "express";
 import Product from "../models/Product.model";
 
-export const getProduct = async (req: Request, res: Response) => {
+export const getProducts = async (req: Request, res: Response) => {
   try {
     const products = await Product.findAll({
       //Nos traemos todos los product
       order: [
-        ["price", "DESC"], //Esto es una forma de ordenar product
+        ["id", "DESC"], //Esto es una forma de ordenar product
       ],
       attributes: { exclude: ["createdAt", "updatedAt"] }, //Con esto podemos quitar algunos atributos
     });
