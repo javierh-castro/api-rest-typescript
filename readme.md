@@ -1,4 +1,5 @@
 # API REST full CRUD de Productos
+Link api: https://rest-apis-typescript-h0xi.onrender.com/docs/#/Products/get_api_products
 
 Este proyecto es una API RESTful que permite gestionar un CRUD (Crear, Leer, Actualizar y Eliminar) de productos. Está construida con Node.js, Express, Sequelize como ORM, y PostgreSQL como base de datos.
 
